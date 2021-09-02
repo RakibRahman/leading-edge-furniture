@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 function Home() {
   return (
-    <div>
+    <div className="w-screen">
       <Carousel />
     </div>
   );

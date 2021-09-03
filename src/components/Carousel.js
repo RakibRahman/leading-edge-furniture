@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 import S1 from "./../assets/slides/s1.jpg";
 import S2 from "./../assets/slides/s2.jpg";
 import S3 from "./../assets/slides/s3.jpg";
+import S4 from "./../assets/slides/s4.jpg";
+import S5 from "./../assets/slides/s5.jpg";
 
 function Carousel() {
-  const images = [S1, S2, S3];
+  const images = [S1, S2, S5, S3, S4];
 
   let time = 6000;
 

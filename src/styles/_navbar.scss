@@ -1,0 +1,21 @@
+$font-color: pink;
+/* Nav Bar */
+.navbar {
+  animation: fadeInRight;
+  animation-duration: 1s;
+  @apply flex flex-wrap items-center justify-between p-4 bg-black border-b-4 border-red-500 h-sm lg:h-auto overflow-hidden;
+}
+.navbar #pc__links {
+  display: none;
+}
+@media only screen and (min-width: 640px) {
+  .navbar #menu__btn {
+    display: none;
+  }
+  .navbar #pc__links {
+    display: flex;
+  }
+  .navbar #mobile__links {
+    display: none;
+  }
+}

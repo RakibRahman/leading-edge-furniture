@@ -20,9 +20,9 @@ function Carousel() {
   }, [count, time, images.length]);
 
   return (
-    <div className="w-screen overflow-hidden border-2 lg:h-extra">
+    <div className="w-full overflow-hidden rounded-lg h-xl lg:h-extra md:w-xxxl carousel">
       <img
-        className="object-cover w-full h-48"
+        className="object-cover h-full transition ease-in-out "
         src={images[count]}
         alt="slide images"
       />

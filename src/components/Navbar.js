@@ -9,7 +9,10 @@ function Navbar() {
 
   const Logo = () => (
     <div className="w-md md:w-1/4 ">
-      <img className="object-cover w-full h-auto" src={LogoPic} alt="ss" />
+      <Link to="/">
+        {" "}
+        <img className="object-cover w-full h-auto" src={LogoPic} alt="ss" />
+      </Link>
     </div>
   );
   const Links = ({ id }) => (
@@ -27,7 +30,7 @@ function Navbar() {
       <Link className="hover:text-yellow-300" to="/about">
         About Us
       </Link>
-      <Link className="hover:text-yellow-300" to="/contact">
+      <Link className="hover:text-yellow-300 " to="/contact">
         Contact
       </Link>
       <button>mode</button>

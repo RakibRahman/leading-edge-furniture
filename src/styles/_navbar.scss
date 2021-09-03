@@ -7,7 +7,34 @@ $font-color: pink;
 }
 .navbar #pc__links {
   display: none;
+  & a {
+    padding: 0rem 0.3rem;
+    display: block;
+
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  & a:hover {
+    border-right-width: 0.5px;
+    border-left-width: 0.5px;
+    transform: translateY(-3px);
+    animation: bdr 3s ease-in-out forwards infinite;
+  }
+  @keyframes bdr {
+    25% {
+      border-color: #9980fa;
+    }
+    50% {
+      border-color: #a3cb38;
+    }
+    75% {
+      border-color: #009432;
+    }
+    100% {
+      border-color: #006266;
+    }
+  }
 }
+
 @media only screen and (min-width: 640px) {
   .navbar #menu__btn {
     display: none;

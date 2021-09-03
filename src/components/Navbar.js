@@ -18,10 +18,9 @@ function Navbar() {
   const Links = ({ id }) => (
     <div
       id={id}
-      className="flex flex-wrap items-center gap-2 text-sm text-white transition md:gap-4 md:text-xl font-ubuntu"
+      className="flex items-center justify-between gap-2 text-sm text-white transition md:gap-4 md:text-xl font-ubuntu"
     >
       <Link className="text-red-500 hover:text-yellow-300" to="/">
-        {" "}
         Home
       </Link>
       <Link className="hover:text-yellow-300" to="products">

@@ -12,14 +12,24 @@ function Navbar() {
       <img className="object-cover w-full h-auto" src={LogoPic} alt="ss" />
     </div>
   );
-  const Links = () => (
-    <div className="flex flex-wrap items-center gap-2 text-sm text-white transition md:gap-4 md:text-xl font-ubuntu">
-      <Link to="/">
-        <span className="text-red-500 hover:text-yellow-300">Home</span>
+  const Links = ({ id }) => (
+    <div
+      id={id}
+      className="flex flex-wrap items-center gap-2 text-sm text-white transition md:gap-4 md:text-xl font-ubuntu"
+    >
+      <Link className="text-red-500 hover:text-yellow-300" to="/">
+        {" "}
+        Home
       </Link>
-      <Link to="products">Products</Link>
-      <Link to="/about">About Us</Link>
-      <Link to="/contact">Contact</Link>
+      <Link className="hover:text-yellow-300" to="products">
+        Products
+      </Link>
+      <Link className="hover:text-yellow-300" to="/about">
+        About Us
+      </Link>
+      <Link className="hover:text-yellow-300" to="/contact">
+        Contact
+      </Link>
       <button>mode</button>
     </div>
   );
@@ -29,9 +39,10 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-4 bg-black border-b-2 border-red-400 h-sm">
+    <nav className="navbar">
       {toggle ? <Logo /> : null}
-      {showLinks ? <Links /> : null};
+      {showLinks ? <Links id="mobile__links" /> : null};
+      <Links id="pc__links" />
       <button onClick={handleClickToggle} id="menu__btn" className="text-white">
         {toggle ? <MenuOpenIcon /> : <CloseIcon />}
       </button>

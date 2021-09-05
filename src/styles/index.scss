@@ -5,9 +5,62 @@
 @tailwind utilities;
 @import "navbar";
 @import "home";
+@import 'footer';
+
+html {
+  font-size: calc(60% + 0.8vmin);
+}
 body {
   @apply bg-black;
 }
 .App {
   overflow-x: hidden;
+}
+
+.product__card {
+  position: relative;
+  cursor: pointer;
+  & #triangle-bottom-right {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #ea0000;
+    border-left: 100px solid transparent;
+
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    transition: transform 0.5s ease-in-out;
+
+    display: none;
+    &:hover {
+      border-bottom: 100px solid #000000;
+    }
+  }
+
+  & .cart__btn {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    display: none;
+
+    &:hover {
+      #triangle-bottom-right {
+        border-bottom: 100px solid #000000;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 3px 6px 2px 0px rgb(212, 99, 7);
+    .cart__btn {
+      display: block;
+      animation-name: backInLeft;
+      animation-duration: 0.5s;
+    }
+    #triangle-bottom-right {
+      display: block;
+      animation-name: backInLeft;
+      animation-duration: 0.5s;
+    }
+  }
 }

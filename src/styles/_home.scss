@@ -3,4 +3,5 @@
     animation-name: fadeIn;
     animation-duration: 1s;
   }
+  @apply p-2 mt-4 tracking-wide transition-colors bg-red-500 rounded-md  hover:bg-red-400;
 }

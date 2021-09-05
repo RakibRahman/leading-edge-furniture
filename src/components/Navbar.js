@@ -23,7 +23,7 @@ function Navbar() {
       <Link className="text-red-500 hover:text-yellow-300" to="/">
         Home
       </Link>
-      <Link className="hover:text-yellow-300" to="products">
+      <Link className="hover:text-yellow-300" to="/products">
         Products
       </Link>
       <Link className="hover:text-yellow-300" to="/about">

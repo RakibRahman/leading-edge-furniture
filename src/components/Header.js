@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Tooltip } from "@material-ui/core";
 
 const Header = () => {
   return (
@@ -14,11 +15,11 @@ const Header = () => {
       <p className="text-sm font-bold tracking-wider capitalize lg:text-xl">
         available on our <span className="text-red-500">stores</span>
       </p>
-      <Link to="/products">
-        <button className="p-2 mt-4 tracking-wide transition-colors bg-red-500 rounded-md discover hover:font-bold hover:bg-red-400 ">
-          Discover Now
-        </button>
-      </Link>
+      <Tooltip title="Products Details" enterDelay={1000}>
+        <Link to="/products">
+          <button className="discover">Discover Now</button>
+        </Link>
+      </Tooltip>
     </div>
   );
 };

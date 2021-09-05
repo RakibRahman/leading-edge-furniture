@@ -10,7 +10,7 @@ function Products() {
   const Card = ({ product }) => {
     return product.map((product) => (
       <div
-        className="px-2 bg-center bg-cover rounded-md product__card group w-lg h-lg lg:w-xl"
+        className=" product__card"
         style={{ backgroundImage: `url(${product.pic})` }}
         key={product.model}
       >
@@ -30,7 +30,7 @@ function Products() {
     <div className="text-white">
       <h1 className="py-4 my-2 text-6xl text-center">Some of our products</h1>
 
-      <div className="grid grid-cols-1 gap-2 my-4 overflow-hidden lg:gap-4 justify-items-center card__wrapper md:grid-cols-2 lg:grid-cols-3">
+      <div className="card__wrapper">
         <Card product={productsData} />
       </div>
     </div>

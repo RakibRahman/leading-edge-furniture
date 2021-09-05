@@ -11,13 +11,13 @@ function AboutUs() {
   }, []);
   return (
     <div className="about__us">
-      <div className="flex items-center justify-center gap-2">
-        <div className="h-2 bg-gray-500 rounded-md w-md"></div>
+      <div className="flex items-center justify-center gap-2 ">
+        <div className="h-2 bg-gray-500 rounded-md w-md bdr"></div>
         <h1 className="space-x-2 text-4xl text-center">
           <DoubleArrowIcon fontSize="inherit" />
           <span> Our Story</span>
         </h1>
-        <div className="h-2 bg-gray-500 rounded-md w-md"></div>
+        <div className="h-2 bg-gray-500 rounded-md w-md bdr"></div>
       </div>
 
       <div className="mt-4 space-y-4">

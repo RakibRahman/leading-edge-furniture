@@ -5,7 +5,8 @@
 @tailwind utilities;
 @import "navbar";
 @import "home";
-@import 'footer';
+@import "products";
+@import "footer";
 
 html {
   font-size: calc(60% + 0.8vmin);
@@ -61,6 +62,33 @@ body {
       display: block;
       animation-name: backInLeft;
       animation-duration: 0.5s;
+    }
+  }
+}
+
+.about__us {
+  @apply mx-auto text-xl leading-7 text-white md:text-2xl md:w-xxxl lg:w-about my-4;
+
+  & .bdr {
+    animation-name: colorSwitch;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes colorSwitch {
+    25% {
+      background-color: black;
+    }
+    50% {
+      background-color: white;
+    }
+    75% {
+      background-color: #ea0000;
+    }
+    100% {
+      background-color: cadetblue;
     }
   }
 }

@@ -3,7 +3,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import MailIcon from "@material-ui/icons/Mail";
-import { bestSelling } from "./../helpers/productsData";
+import { bestSelling, latestProducts } from "./../helpers/productsData";
 
 function Footer() {
   const Card = ({ data }) => {
@@ -59,11 +59,11 @@ function Footer() {
       </div>
     </div>
   );
-  const BestSelling = () => (
+  const BestSelling = ({ title, products }) => (
     <div className="space-y-4 best-selling">
-      <h1 className="text-lg text-white">Best Selling</h1>
+      <h1 className="text-lg text-white">{title}</h1>
       <div className="w-1/6 h-2 my-4 bg-gray-400"></div>
-      <Card data={bestSelling} />
+      <Card data={products} />
     </div>
   );
   const Newsletter = () => (
@@ -95,7 +95,8 @@ function Footer() {
     <Fragment>
       <footer className="footer">
         <About />
-        <BestSelling />
+        <BestSelling products={latestProducts} title="Latest" />
+        <BestSelling products={bestSelling} title="Best Selling" />
         <Newsletter />
       </footer>
       <p className="copyright">Copyright 2021 © LeadingEdge Furniture </p>

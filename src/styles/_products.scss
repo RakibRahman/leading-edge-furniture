@@ -1,0 +1,7 @@
+.card__wrapper {
+  @apply grid grid-cols-1 gap-2 my-4 overflow-hidden lg:gap-4 justify-items-center  md:grid-cols-2 lg:grid-cols-3;
+
+  & .product__card {
+    @apply px-2 bg-center bg-cover rounded-md  group w-lg h-lg lg:w-xl;
+  }
+}

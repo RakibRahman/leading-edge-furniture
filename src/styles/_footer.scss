@@ -1,5 +1,5 @@
 footer {
-  @apply flex-col items-start justify-between p-4 space-y-4 text-lg text-white bg-gray-600 md:flex lg:flex-row;
+  @apply flex-col items-start gap-2 justify-between p-4 space-y-4 text-lg text-white bg-gray-600 md:flex lg:flex-row;
 }
 .copyright {
   @apply w-full py-2 text-lg text-center text-gray-300 bg-gray-900 lg:text-xl;

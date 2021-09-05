@@ -13,6 +13,7 @@ module.exports = {
       xxl: "520px",
       extra: "620px",
       xxxl: "750px",
+      about: "850px",
     },
     fontFamily: {
       ubuntu: ["Ubuntu", "sans-serif"],

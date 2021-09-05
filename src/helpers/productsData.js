@@ -73,3 +73,20 @@ export const bestSelling = [
     price: "2,500",
   },
 ];
+export const latestProducts = [
+  {
+    pic: P5,
+    model: "SKU: ABC-123",
+    price: "32,500",
+  },
+  {
+    pic: P8,
+    model: "SKU: SS-295",
+    price: "12,900",
+  },
+  {
+    pic: P4,
+    model: "SKU: BB-175",
+    price: "30,500",
+  },
+];

@@ -10,11 +10,8 @@ import Footer from "./components/Footer";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
-    if (darkMode) {
-      document.querySelector("#root").classList.add("dark");
-    } else {
-      document.querySelector("#root").classList.remove("dark");
-    }
+    const root = document.querySelector("#root");
+    darkMode ? root.classList.add("dark") : root.classList.remove("dark");
   }, [darkMode]);
   const toggleHandler = () => {
     setDarkMode(!darkMode);

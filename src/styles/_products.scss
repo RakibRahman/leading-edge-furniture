@@ -1,40 +1,50 @@
 .card__wrapper {
   @apply grid grid-cols-1 gap-2 my-4 overflow-hidden lg:gap-4 justify-items-center  md:grid-cols-2 lg:grid-cols-3;
+}
+.product__card {
+  @apply px-2 bg-center bg-cover rounded-md w-lg h-lg lg:w-xl;
 
-  & .product__card {
-    @apply px-2 bg-center bg-cover rounded-md  group w-lg h-lg lg:w-xl;
+  position: relative;
+  cursor: pointer;
+  & #triangle-bottom-right {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #ea0000;
+    border-left: 100px solid transparent;
 
-    position: relative;
-    cursor: pointer;
-    & #triangle-bottom-right {
-      width: 0;
-      height: 0;
-      border-bottom: 100px solid #ea0000;
-      border-left: 100px solid transparent;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    transition: transform 0.5s ease-in-out;
+    animation-name: fadeInRight;
+    animation-duration: 0.5s;
+    display: none;
+    &:hover {
+      border-bottom: 100px solid #000000;
+    }
+  }
 
-      position: absolute;
-      right: 0rem;
-      bottom: 0rem;
-      transition: transform 0.5s ease-in-out;
+  & .cart__btn {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    display: none;
+    animation-name: fadeInRight;
+    animation-duration: 0.5s;
 
-      display: none;
-      &:hover {
+    &:hover {
+      #triangle-bottom-right {
         border-bottom: 100px solid #000000;
       }
     }
-
-    & .cart__btn {
-      position: absolute;
-      right: 0.5rem;
-      bottom: 0.5rem;
-      transition: all 0.5s ease-in-out;
-      display: none;
-
-      &:hover {
-        #triangle-bottom-right {
-          border-bottom: 100px solid #000000;
-        }
-      }
+  }
+  &:hover {
+    .cart__btn {
+      display: block;
+    }
+    #triangle-bottom-right {
+      display: block;
     }
   }
 }

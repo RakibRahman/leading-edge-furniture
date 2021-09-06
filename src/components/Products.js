@@ -10,7 +10,7 @@ function Products() {
   const Card = ({ product }) => {
     return product.map((product) => (
       <div
-        className=" product__card"
+        className="product__card"
         style={{ backgroundImage: `url(${product.pic})` }}
         key={product.model}
       >

@@ -33,7 +33,7 @@
       }
     }
     & .submit__btn {
-      @apply w-1/6 p-2 bg-red-500 hover:opacity-70 rounded-md  dark:bg-green-600 dark:text-white;
+      @apply w-sm md:w-1/6 p-2 bg-red-500 hover:opacity-70 rounded-md  dark:bg-green-600 dark:text-white;
     }
   }
 }

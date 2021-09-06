@@ -1,5 +1,5 @@
 .about__us {
-  @apply mx-auto text-xl leading-7 text-white md:text-2xl md:w-xxxl lg:w-about my-4;
+  @apply mx-auto p-4 text-xl leading-7 text-white md:text-2xl md:w-xxxl lg:w-about my-4;
 
   & .bdr {
     animation-name: colorSwitch;

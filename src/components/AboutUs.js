@@ -11,7 +11,7 @@ function AboutUs() {
   }, []);
   return (
     <div className="about__us dark:text-black">
-      <div className="flex items-center justify-center gap-2 ">
+      <div className="flex flex-col items-center justify-center gap-2 md:flex-row ">
         <div className="h-2 bg-gray-500 rounded-md w-md bdr"></div>
         <h1 className="space-x-2 text-4xl text-center">
           <DoubleArrowIcon fontSize="inherit" />

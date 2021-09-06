@@ -46,3 +46,14 @@ $font-color: pink;
     display: none;
   }
 }
+.active {
+  animation: spin 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

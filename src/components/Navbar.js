@@ -42,7 +42,11 @@ function Navbar({ toggleDarkMode, clickHandler }) {
       </Link>
       <Tooltip title="Toggle Light/Dark Mode">
         <button onClick={clickHandler}>
-          {toggleDarkMode ? <Brightness5Icon /> : <Brightness4Icon />}
+          {toggleDarkMode ? (
+            <Brightness5Icon className="active" />
+          ) : (
+            <Brightness4Icon className="active" />
+          )}
         </button>
       </Tooltip>
     </div>

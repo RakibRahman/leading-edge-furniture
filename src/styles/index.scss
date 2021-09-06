@@ -7,15 +7,13 @@
 @import "home";
 @import "products";
 @import "footer";
-@import 'contact';
-@import 'about';
+@import "contact";
+@import "about";
 html {
   font-size: calc(60% + 0.8vmin);
 }
-body {
-  @apply bg-black;
-}
+
 .App {
   overflow-x: hidden;
+  @apply bg-black  dark:bg-green-100 dark:text-black font-raleway;
 }
-

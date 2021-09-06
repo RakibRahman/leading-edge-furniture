@@ -4,9 +4,10 @@ import { Tooltip } from "@material-ui/core";
 
 const Header = () => {
   return (
-    <div className="flex-1 p-2 mt-2 space-y-2 text-white lg:space-y-4 header">
-      <h1 className="text-4xl font-black tracking-wide animate-pulse lg:text-6xl">
-        Leading<span className="text-red-500">Edge</span> Furn
+    <div className="header dark:text-black">
+      <h1 className="title dark:text-black">
+        Leading<span className="text-red-500 dark:text-green-800">Edge</span>{" "}
+        Furn
         <span className="text-red-500">i</span>ture
       </h1>
       <p className="mt-2 font-bold tracking-wide capitalize lg:text-2xl">
@@ -17,7 +18,9 @@ const Header = () => {
       </p>
       <Tooltip title="Products Details" enterDelay={1000}>
         <Link to="/products">
-          <button className="discover">Discover Now</button>
+          <button className="discover dark:bg-green-600 dark:text-white">
+            Discover Now
+          </button>
         </Link>
       </Tooltip>
     </div>

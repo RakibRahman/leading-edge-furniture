@@ -7,7 +7,7 @@ function Home() {
     document.title = "LeadingEdge Furniture";
   }, []);
   return (
-    <div className="flex flex-col-reverse items-center justify-between w-full p-4 lg:flex-row">
+    <div className="home">
       <Header />
       <Carousel />
     </div>

@@ -27,8 +27,10 @@ function Products() {
     ));
   };
   return (
-    <div className="text-white">
-      <h1 className="py-4 my-2 text-6xl text-center">Some of our products</h1>
+    <div className="text-white dark:text-black">
+      <h1 className="py-4 my-2 text-6xl text-center capitalize">
+        Some of our products
+      </h1>
 
       <div className="card__wrapper">
         <Card product={productsData} />

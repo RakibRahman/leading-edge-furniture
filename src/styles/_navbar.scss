@@ -3,7 +3,7 @@ $font-color: pink;
 .navbar {
   animation: fadeInRight;
   animation-duration: 1s;
-  @apply flex flex-wrap items-center justify-between p-4 bg-black border-b-4 border-red-500 h-sm lg:h-auto overflow-hidden;
+  @apply flex flex-wrap items-center justify-between p-4 bg-black border-b-4 border-red-500 h-sm lg:h-auto overflow-hidden dark:bg-white;
 }
 .navbar #pc__links {
   display: none;

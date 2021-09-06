@@ -1,3 +1,13 @@
+.home {
+  @apply flex flex-col-reverse items-center justify-between w-full p-4 lg:flex-row;
+}
+.header {
+  @apply flex-1 p-2 mt-2 space-y-2 text-white lg:space-y-4;
+
+  & .title {
+    @apply text-4xl font-black tracking-wide animate-pulse lg:text-6xl;
+  }
+}
 .discover {
   &:hover {
     animation-name: fadeIn;

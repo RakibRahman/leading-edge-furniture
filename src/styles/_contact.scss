@@ -1,32 +1,39 @@
-.contact__form {
-  @apply flex flex-col gap-4  mt-4 text-2xl text-white w-xxl lg:w-xxxl;
-  & input[type="text"],
-  input[type="email"] {
-    background: transparent;
-    padding: 0.5rem;
-    outline: 0;
-    caret-color: #ea0000;
-    border-bottom: 0.2rem solid #ea0000;
+.contact__container {
+  @apply flex flex-col items-center gap-4 justify-between p-4 lg:flex-row;
 
-    @media only screen and (min-width: 320px) {
-      width: 100%;
-    }
-    @media only screen and (min-width: 1024px) {
-      width: 80%;
-    }
-  }
-  textarea {
-    height: 25vh;
-    outline: 0;
-    color: seagreen;
-    resize: none;
-    border: 0.2rem solid #ea0000;
-    padding: 0.5rem;
+  & .contact__form {
+    @apply flex flex-col gap-4  mt-4 text-2xl text-white dark:text-black w-auto md:w-xxl lg:w-xxxl;
+    & input[type="text"],
+    input[type="email"] {
+      background: transparent;
+      padding: 0.5rem;
+      outline: 0;
+      caret-color: #ea0000;
+      border-bottom: 0.2rem solid #ea0000;
 
-    border-radius: 0.2rem;
-    background: transparent;
-    @media only screen and (min-width: 1024px) {
-      width: 80%;
+      @media only screen and (min-width: 320px) {
+        width: 100%;
+      }
+      @media only screen and (min-width: 1024px) {
+        width: 80%;
+      }
+    }
+    textarea {
+      height: 25vh;
+      outline: 0;
+      color: seagreen;
+      resize: none;
+      border: 0.2rem solid #ea0000;
+      padding: 0.5rem;
+
+      border-radius: 0.2rem;
+      background: transparent;
+      @media only screen and (min-width: 1024px) {
+        width: 80%;
+      }
+    }
+    & .submit__btn {
+      @apply w-1/6 p-2 bg-red-500 hover:opacity-70 rounded-md  dark:bg-green-600 dark:text-white;
     }
   }
 }

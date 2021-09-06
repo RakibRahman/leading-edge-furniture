@@ -11,10 +11,13 @@ function Contact() {
     backgroundPosition: "center",
   };
   return (
-    <div className="flex flex-col items-center justify-around p-4 md:flex-row">
-      <div className="w-full rounded-lg h-xl md:w-xl" style={bgStyle}></div>
+    <div className="contact__container">
+      <div
+        className="w-full rounded-lg h-xl md:w-xl lg:w-xxl"
+        style={bgStyle}
+      ></div>
       <div>
-        <form className="contact__form">
+        <form className="contact__form dark:text-black">
           <h1 className="text-3xl text-center">Contact Us</h1>
           <Input
             name="f-name"
@@ -36,7 +39,7 @@ function Contact() {
             id="comment"
             placeTxt="Enter your message"
           />
-          <button className="p-1 bg-red-500 rounded-md w-sm" type="submit">
+          <button className="submit__btn" type="submit">
             Submit
           </button>
         </form>

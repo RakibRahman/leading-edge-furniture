@@ -10,7 +10,7 @@ function AboutUs() {
     };
   }, []);
   return (
-    <div className="about__us">
+    <div className="about__us dark:text-black">
       <div className="flex items-center justify-center gap-2 ">
         <div className="h-2 bg-gray-500 rounded-md w-md bdr"></div>
         <h1 className="space-x-2 text-4xl text-center">

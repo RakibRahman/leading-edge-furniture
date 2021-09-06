@@ -12,3 +12,5 @@ A _furniture_ based e-commerce website built with **React.js**,**React-router**,
 - Mobile Responsive
 
 # Screenshot:
+
+![SS](./src/assets/SS.gif)
